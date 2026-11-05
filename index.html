@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thomas Sacchetti · Portfolio</title>
+  <meta name="description" content="Portfolio di Thomas Sacchetti, studente e sviluppatore software. C#, Python, C++, Kotlin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <header class="nav">
+    <a href="#home" class="logo">ts<span>_</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Apri menu">☰</button>
+    <nav id="navLinks">
+      <a href="#about">Chi sono</a>
+      <a href="#skills">Competenze</a>
+      <a href="#projects">Progetti</a>
+      <a href="#experience">Esperienza</a>
+      <a href="#contact">Contatti</a>
+      <button id="themeBtn" class="theme-btn" aria-label="Cambia tema">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <p class="mono hello">// ciao, sono</p>
+      <h1>Thomas<br />Sacchetti<span class="dot">.</span></h1>
+      <p class="typed-line">
+        <span class="mono">&gt;</span> <span id="typed"></span><span class="cursor">|</span>
+      </p>
+      <p class="lead">
+        Diplomando in informatica e sviluppatore software. Mi piace capire come funzionano le cose:
+        scrivo codice, riparo hardware e lavoro ogni giorno con Linux e il terminale.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn primary">Vedi i progetti</a>
+        <a href="#contact" class="btn">Contattami</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2><span class="mono num">01</span> Chi sono</h2>
+      <div class="about-grid">
+        <p>
+          Frequento l'ultimo anno dell'indirizzo Informatica all'<strong>IIS Pascal Comandini (Blaise Pascal)</strong>
+          di Cesena e mi diplomo quest'anno. Studio programmazione (C#, Python, Kotlin), programmazione
+          orientata agli oggetti, reti e sistemi, telecomunicazioni e TPSIT.
+        </p>
+        <p>
+          Ho fatto esperienza sul campo sia come sviluppatore software (login sicuro con crittografia,
+          luglio 2025) sia con un'esperienza <strong>Erasmus+ in Portogallo</strong>, dove ho lavorato su riparazioni
+          hardware e software, usando Linux e il terminale. Cerco sempre nuove sfide per imparare e crescere.
+        </p>
+        <ul class="facts mono">
+          <li><span>Studi</span> Diploma superiore in arrivo (EQF 4)</li>
+          <li><span>Lingue</span> Italiano · Inglese B2 · Spagnolo A2</li>
+          <li><span>Base</span> Ravenna, Italia</li>
+          <li><span>Esperienze</span> Erasmus+ in Portogallo</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2><span class="mono num">02</span> Competenze</h2>
+      <div class="skill-groups">
+        <div class="card">
+          <h3>Linguaggi</h3>
+          <div class="chips">
+            <span>C#</span><span>Python</span><span>C++</span><span>Kotlin</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Concetti</h3>
+          <div class="chips">
+            <span>Programmazione a oggetti</span><span>Scripting</span><span>Debugging</span><span>Crittografia</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Sistemi e reti</h3>
+          <div class="chips">
+            <span>Linux</span><span>Terminale / shell</span><span>Installazione SO</span><span>Subnetting</span><span>Indirizzamento IP</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Assistenza tecnica</h3>
+          <div class="chips">
+            <span>Riparazione hardware</span><span>Riparazione software</span><span>Diagnosi guasti</span><span>Troubleshooting</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Strumenti e soft skill</h3>
+          <div class="chips">
+            <span>Microsoft Office</span><span>Word</span><span>Excel</span><span>Lavoro di squadra</span><span>Pensiero analitico</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2><span class="mono num">03</span> Progetti</h2>
+      <p class="muted">I progetti si aggiungono dal file <code>projects.js</code>.</p>
+      <div class="filters" id="filters"></div>
+      <div class="project-grid" id="projectGrid"></div>
+      <p class="empty" id="emptyMsg" hidden>Nessun progetto per questo filtro.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+      <h2><span class="mono num">04</span> Esperienza</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <p class="mono date">2026 · Portogallo</p>
+          <h3>Erasmus+ · Assistenza hardware e software</h3>
+          <ul>
+            <li>Riparazione e diagnosi di problemi hardware e software.</li>
+            <li>Uso quotidiano di Linux e del terminale per configurazione e risoluzione dei problemi.</li>
+            <li>Esperienza di lavoro in un contesto internazionale, in inglese.</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <p class="mono date">15/07/2025 – 31/07/2025 · Cervia</p>
+          <h3>Software Developer · Farmo Res Srl</h3>
+          <ul>
+            <li>Sviluppo di un login sicuro e della gestione di un macchinario in C++ e Python, con crittografia per la protezione dei dati.</li>
+            <li>Progettazione, implementazione e test delle funzionalità insieme a un altro sviluppatore.</li>
+            <li>Debugging del codice scritto.</li>
+          </ul>
+        </div>
+        <div class="t-item">
+          <p class="mono date">15/09/2022 – diploma quest'anno · Cesena</p>
+          <h3>Informatica · IIS Pascal Comandini (Blaise Pascal)</h3>
+          <ul>
+            <li>Tecniche di programmazione: C#, Python, Kotlin, OOP, scripting, debugging.</li>
+            <li>Sistemi e reti: installazione e configurazione SO, subnetting, indirizzamento IP.</li>
+            <li>Telecomunicazioni e TPSIT: circuiti di base, esecuzione parallela, sincronizzazione, gestione delle risorse.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <h2><span class="mono num">05</span> Contatti</h2>
+      <p class="lead">Hai un'idea, un'opportunità o vuoi solo salutare? Scrivimi.</p>
+      <div class="contact-links">
+        <a class="btn primary" href="mailto:tt9290890@gmail.com">tt9290890@gmail.com</a>
+        <a class="btn" href="https://github.com/thomas-sacchetti" target="_blank" rel="noopener" id="githubLink">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="mono">© <span id="year"></span> Thomas Sacchetti</p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
