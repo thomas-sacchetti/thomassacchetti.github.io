@@ -2,7 +2,7 @@
 
 Il mio portfolio personale: una pagina web statica in **HTML, CSS e JavaScript** puro, senza framework né dipendenze da installare.
 
-🔗 **Sito online:** `https://TUO-USERNAME.github.io/NOME-REPO/` *(sostituisci con il tuo link dopo aver attivato GitHub Pages)*
+🔗 **Sito online:** `https://thomas-sacchetti.github.io/thomassacchetti.github.io/`
 
 ## Chi sono
 
